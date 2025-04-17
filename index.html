@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Доступ разрешён</title>
+</head>
+<body>
+  true
+  <!--
+    Если здесь будет НЕ "true", приложение покажет сообщение.
+    Например, удали это "true", и появится страница ниже.
+  -->
+  <script>
+    document.body.innerHTML = `
+      <h2>Обновление приложения</h2>
+      <p>Пожалуйста, скачайте новую версию по ссылке ниже:</p>
+      <a href="https://www.rustore.ru/catalog/app/com.taxihelper.coef">Скачать обновление</a>
+    `;
+  </script>
+</body>
+</html>
