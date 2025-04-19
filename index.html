@@ -2,7 +2,50 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Доступ разрешён</title>
+  <title>Обновление приложения</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f4f4f8;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: white;
+      padding: 2rem 3rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+    }
+    .card h2 {
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    .card p {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .card a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .card a:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
   true
@@ -12,9 +55,11 @@
   -->
   <script>
     document.body.innerHTML = `
-      <h2>Обновление приложения</h2>
-      <p>Пожалуйста, скачайте новую версию по ссылке ниже:</p>
-      <a href="https://www.rustore.ru/catalog/app/com.taxihelper.coef">Скачать обновление</a>
+      <div class="card">
+        <h2>Обновление приложения</h2>
+        <p>Пожалуйста, скачайте новую версию по ссылке ниже:</p>
+        <a href="https://www.rustore.ru/catalog/app/com.taxihelper.coef" target="_blank">Скачать обновление</a>
+      </div>
     `;
   </script>
 </body>
