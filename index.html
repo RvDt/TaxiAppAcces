@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Обновление приложения</title>
+  <title>Вышло Обновление!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -30,9 +30,15 @@
     .card p {
       color: #555;
       font-size: 1rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
-    .card a {
+    .highlight {
+      font-weight: bold;
+      font-size: 1.05rem;
+      color: #222;
+      margin-top: 1.5rem;
+    }
+    .card a.button {
       display: inline-block;
       padding: 0.75rem 1.5rem;
       background-color: #4CAF50;
@@ -41,26 +47,26 @@
       font-weight: bold;
       border-radius: 8px;
       transition: background-color 0.3s ease;
+      margin-top: 1rem;
     }
-    .card a:hover {
+    .card a.button:hover {
       background-color: #45a049;
     }
   </style>
 </head>
 <body>
-  true
-  <!--
-    Если здесь будет НЕ "true", приложение покажет сообщение.
-    Например, удали это "true", и появится страница ниже.
-  -->
   <script>
     document.body.innerHTML = `
       <div class="card">
-        <h2>Обновление приложения</h2>
+        <h2>Вышло Обновление!</h2>
         <p>Пожалуйста, скачайте новую версию по ссылке ниже:</p>
-        <a href="https://www.rustore.ru/catalog/app/com.taxihelper.coef" target="_blank">Скачать обновление</a>
+        <a class="button" href="https://www.rustore.ru/catalog/app/com.taxihelper.coef" target="_blank">Скачать с Rustore</a>
+        
+        <p class="highlight">Также рекомендую подписаться на тг канал — туда раньше приходят новые версии, можем обсудить ваши пожелания:</p>
+        <a class="button" href="https://t.me/price_taxi_map" target="_blank">Перейти в Telegram</a>
       </div>
     `;
   </script>
 </body>
 </html>
+
