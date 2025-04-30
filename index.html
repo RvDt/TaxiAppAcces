@@ -2,79 +2,184 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Вышло Обновление!</title>
+  <title>Важное Обновление!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+    :root {
+      --primary: #4361ee;
+      --secondary: #3f37c9;
+      --accent: #4cc9f0;
+      --text: #2b2d42;
+      --light: #f8f9fa;
+      --success: #4caf50;
+    }
+    
     body {
       margin: 0;
       padding: 0;
-      background: #f4f4f8;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      font-family: 'Montserrat', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
+      color: var(--text);
     }
+    
     .card {
       background: white;
-      padding: 2rem 3rem;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
       text-align: center;
-      max-width: 400px;
+      max-width: 450px;
+      margin: 20px;
+      position: relative;
+      overflow: hidden;
     }
+    
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+    }
+    
     .card h2 {
-      color: #333;
-      margin-bottom: 1rem;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      font-weight: 700;
     }
-    .card p {
-      color: #555;
+    
+    .update-features {
+      text-align: left;
+      margin: 2rem 0;
+    }
+    
+    .feature {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.2rem;
+    }
+    
+    .feature-icon {
+      color: var(--success);
+      margin-right: 12px;
+      font-size: 1.2rem;
+      margin-top: 3px;
+    }
+    
+    .feature-text {
+      flex: 1;
       font-size: 1rem;
-      margin-bottom: 1rem;
+      line-height: 1.5;
     }
-    .highlight {
-      font-weight: bold;
-      font-size: 1.05rem;
-      color: #222;
-      margin-top: 1.5rem;
-    }
-    .highlight-channel {
-      font-weight: bold;
-      font-size: 1.3rem;
-      color: #00796b;
-      background-color: #e0f2f1;
-      padding: 8px;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-    .card a.button {
+    
+    .button {
       display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: #4CAF50;
+      padding: 0.9rem 2rem;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
       color: white;
       text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-      margin-top: 1rem;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      margin: 1rem 0;
+      box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
     }
-    .card a.button:hover {
-      background-color: #45a049;
+    
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(67, 97, 238, 0.4);
+    }
+    
+    .telegram-promo {
+      background-color: #e3f2fd;
+      padding: 1rem;
+      border-radius: 12px;
+      margin-top: 2rem;
+      position: relative;
+    }
+    
+    .telegram-icon {
+      color: #0088cc;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .channel-link {
+      display: inline-block;
+      background-color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 0.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .channel-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .badge {
+      position: absolute;
+      top: -12px;
+      right: 20px;
+      background-color: var(--accent);
+      color: white;
+      padding: 0.3rem 1rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
-  <script>
-    document.body.innerHTML = `
-      <div class="card">
-        <h2>Вышло Обновление!</h2>
-        <p>Пожалуйста, скачайте новую версию по ссылке ниже:</p>
-        <a class="button" href="https://www.rustore.ru/catalog/app/com.taxihelper.coef" target="_blank">Скачать с Rustore</a>
-        
-        <p class="highlight">Также рекомендую подписаться на тг канал — туда раньше приходят новые версии, можем обсудить ваши пожелания:</p>
-        <p class="highlight-channel">@price_taxi_map</p>
+  <div class="card">
+    <h2><i class="fas fa-rocket"></i> Важное Обновление!</h2>
+    
+    <div class="update-features">
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+        <div class="feature-text">Стало меньше рекламы - мы ценим ваше время</div>
       </div>
-    `;
-  </script>
+      
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-brain"></i></div>
+        <div class="feature-text">Полностью переработаны алгоритмы - теперь работает быстрее и точнее</div>
+      </div>
+      
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-plus-circle"></i></div>
+        <div class="feature-text">Добавлены новые функции по вашим запросам</div>
+      </div>
+    </div>
+    
+    <a href="https://www.rustore.ru/catalog/app/com.taxihelper.coef" class="button">
+      <i class="fas fa-download"></i> Обновить через RuStore
+    </a>
+    
+    <div class="telegram-promo">
+      <div class="badge">Рекомендуем</div>
+      <div class="telegram-icon"><i class="fab fa-telegram"></i></div>
+      <p>Подпишитесь на наш Telegram-канал, чтобы первыми получать обновления и участвовать в обсуждении новых функций!</p>
+      <a href="https://t.me/price_taxi_map" class="channel-link">
+        @price_taxi_map <i class="fas fa-external-link-alt"></i>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
