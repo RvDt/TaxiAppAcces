@@ -14,6 +14,7 @@
       --text: #2b2d42;
       --light: #f8f9fa;
       --success: #4caf50;
+      --warning: #ff9800;
     }
     
     body {
@@ -69,10 +70,11 @@
     }
     
     .feature-icon {
-      color: var(--success);
       margin-right: 12px;
       font-size: 1.2rem;
       margin-top: 3px;
+      min-width: 20px;
+      text-align: center;
     }
     
     .feature-text {
@@ -145,26 +147,38 @@
       font-size: 0.8rem;
       font-weight: 600;
     }
+    
+    .icon-success {
+      color: var(--success);
+    }
+    
+    .icon-warning {
+      color: var(--warning);
+    }
+    
+    .icon-info {
+      color: var(--primary);
+    }
   </style>
 </head>
 <body>
   <div class="card">
-    <h2><i class="fas fa-rocket"></i> Важное Обновление!</h2>
+    <h2><i class="fas fa-rocket"></i> Критическое Обновление!</h2>
     
     <div class="update-features">
       <div class="feature">
-        <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
-        <div class="feature-text">Стало меньше рекламы - мы ценим ваше время</div>
+        <div class="feature-icon icon-success"><i class="fas fa-check-double"></i></div>
+        <div class="feature-text"><strong>ВОССТАНОВЛЕНА РАБОТОСПОСОБНОСТЬ В НОВОЙ ВЕРСИИ</strong></div>
       </div>
       
       <div class="feature">
-        <div class="feature-icon"><i class="fas fa-brain"></i></div>
-        <div class="feature-text">Полностью переработаны алгоритмы - теперь работает быстрее и точнее</div>
+        <div class="feature-icon icon-warning"><i class="fas fa-exclamation-triangle"></i></div>
+        <div class="feature-text"><strong>Возможны проблемы с долгой авторизацией - ждите, не закрывая приложение</strong></div>
       </div>
       
       <div class="feature">
-        <div class="feature-icon"><i class="fas fa-plus-circle"></i></div>
-        <div class="feature-text">Добавлены новые функции по вашим запросам</div>
+        <div class="feature-icon icon-info"><i class="fas fa-info-circle"></i></div>
+        <div class="feature-text">Мы продолжаем улучшать стабильность работы приложения</div>
       </div>
     </div>
     
