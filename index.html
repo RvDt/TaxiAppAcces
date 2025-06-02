@@ -15,6 +15,7 @@
       --light: #f8f9fa;
       --success: #4caf50;
       --warning: #ff9800;
+      --telegram: #0088cc;
     }
 
     body {
@@ -97,11 +98,22 @@
       border: none;
       cursor: pointer;
       font-size: 0.95rem;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .button:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(67, 97, 238, 0.4);
+    }
+
+    .button-telegram {
+      background: linear-gradient(135deg, var(--telegram) 0%, #0077b5 100%);
+      box-shadow: 0 4px 15px rgba(0, 136, 204, 0.3);
+    }
+
+    .button-telegram:hover {
+      box-shadow: 0 6px 20px rgba(0, 136, 204, 0.4);
     }
 
     .icon-success {
@@ -110,6 +122,13 @@
 
     .icon-info {
       color: var(--primary);
+    }
+
+    .buttons-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      margin-top: 1rem;
     }
   </style>
 </head>
@@ -139,9 +158,14 @@
       </div>
     </div>
 
-    <a href="https://rustore.ru/catalog/app/com.taxihelper.coef" class="button">
-      <i class="fas fa-download"></i> Обновить через RuStore
-    </a>
+    <div class="buttons-container">
+      <a href="https://rustore.ru/catalog/app/com.taxihelper.coef" class="button">
+        <i class="fas fa-download"></i> Обновить через RuStore
+      </a>
+      <a href="https://t.me/price_taxi_map" class="button button-telegram">
+        <i class="fab fa-telegram"></i> Наш Telegram-канал
+      </a>
+    </div>
   </div>
 </body>
 </html>
