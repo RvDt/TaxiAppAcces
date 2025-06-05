@@ -2,5 +2,5 @@
   "alg": 1,
   "delayAlg": 2000,
   "delayAlgCycle": 10,
-  "maxErrorCount": 10
+  "maxErrorCount": 30
 }
