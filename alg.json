@@ -7,5 +7,5 @@
   "overlayDelay": 10000,
   "overlayDelayB": 5000,
   "delayBack": 5000,
-  "algLifecycle": 0
+  "algLifecycle": 1
 }
