@@ -1,7 +1,7 @@
 {
   "alg": 0,
-  "delayAlg": 7500,
-  "delayAlgCycle": 25,
-  "maxErrorCount": 30,
+  "delayAlg": 10000,
+  "delayAlgCycle": 0,
+  "maxErrorCount": 10,
   "firstAlg": 0
 }
