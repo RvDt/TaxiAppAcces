@@ -2,10 +2,10 @@
   "alg": 0,
   "delayAlg": 10000,
   "delayAlgCycle": 0,
-  "maxErrorCount": 15,
+  "maxErrorCount": 20,
   "firstAlg": 0,
   "overlayDelay": 10000,
-  "overlayDelayB": 5000,
-  "delayBack": 5000,
+  "overlayDelayB": 10000,
+  "delayBack": 30000,
   "algLifecycle": 1
 }
