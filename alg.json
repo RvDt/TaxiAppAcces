@@ -6,6 +6,6 @@
   "firstAlg": 0,
   "overlayDelay": 15000,
   "overlayDelayB": 15000,
-  "delayBack": 40000,
+  "delayBack": 60000,
   "algLifecycle": 1
 }
