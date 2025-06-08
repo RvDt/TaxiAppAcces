@@ -4,8 +4,8 @@
   "delayAlgCycle": 0,
   "maxErrorCount": 20,
   "firstAlg": 0,
-  "overlayDelay": 15000,
+  "overlayDelay": 20000,
   "overlayDelayB": 15000,
-  "delayBack": 60000,
+  "delayBack": 9999999999,
   "algLifecycle": 1
 }
