@@ -84,6 +84,12 @@
       line-height: 1.4;
     }
 
+    .feature-title {
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      color: var(--primary);
+    }
+
     .button {
       display: inline-block;
       padding: 0.8rem 1.8rem;
@@ -130,12 +136,43 @@
       gap: 0.7rem;
       margin-top: 1rem;
     }
+
+    .warning-note {
+      background-color: rgba(255, 152, 0, 0.1);
+      padding: 0.8rem;
+      border-radius: 10px;
+      margin: 1rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+      border-left: 4px solid var(--warning);
+    }
   </style>
 </head>
 <body>
   <div class="card">
     <h2><i class="fas fa-rocket"></i> Обновление!</h2>
 
+    <div class="update-features">
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-exclamation-triangle icon-info"></i></div>
+        <div class="feature-text">
+          <div class="feature-title">Критичные изменения работы алгоритма</div>
+          <div>Мы внесли важные изменения в алгоритм работы приложения, которые требуют обязательного обновления для корректной работы.</div>
+        </div>
+      </div>
+      
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-chart-line icon-info"></i></div>
+        <div class="feature-text">
+          <div class="feature-title">Оптимизация производительности</div>
+          <div>Улучшена скорость работы приложения и снижено потребление ресурсов.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="warning-note">
+      Пожалуйста, обновите приложение для продолжения работы. Спасибо за понимание!
+    </div>
 
     <div class="buttons-container">
       <a href="https://rustore.ru/catalog/app/com.taxihelper.coef" class="button">
