@@ -2,5 +2,6 @@
   "blockTime": 300,
   "maxAuthErrorCount": 1,
   "accounts": 2,
-  "accountsPro": 10
+  "accountsPro": 10,
+  "hourFreePodpiska": 24,
 }
