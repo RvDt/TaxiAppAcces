@@ -4,6 +4,6 @@
   "accounts": 2,
   "accountsPro": 14,
   "hourFreePodpiska": 24,
-  "allFree": true,
+  "allFree": false,
   "newFree": false
 }
