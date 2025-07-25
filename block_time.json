@@ -1,9 +1,12 @@
 {
-  "blockTime": 300,
+  "blockTime": 600,
   "maxAuthErrorCount": 1,
   "accounts": 2,
   "accountsPro": 12,
   "hourFreePodpiska": 24,
   "allFree": false,
-  "newFree": false
+  "newFree": false,
+  "accountsProTrial": 6,
+  "warnPro": true,
+  "isOldPro": true
 }
