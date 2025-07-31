@@ -1,5 +1,6 @@
 {
   "blockTime": 9999999,
+  "blockTime2": 30,
   "maxAuthErrorCount": 1,
   "accounts": 2,
   "accountsPro": 12,
