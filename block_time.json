@@ -1,6 +1,6 @@
 {
   "blockTime": 9999999,
-  "blockTime2": 30,
+  "blockTime2": 1440,
   "maxAuthErrorCount": 1,
   "accounts": 2,
   "accountsPro": 12,
@@ -9,5 +9,6 @@
   "newFree": false,
   "accountsProTrial": 6,
   "warnPro": true,
-  "isOldPro": true
+  "isOldPro": true,
+  "markerStat": true
 }
