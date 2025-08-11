@@ -10,5 +10,6 @@
   "accountsProTrial": 6,
   "warnPro": true,
   "isOldPro": true,
-  "markerStat": true
+  "markerStat": true,
+  "isOldIDCheck": true
 }
