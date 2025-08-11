@@ -11,5 +11,5 @@
   "warnPro": true,
   "isOldPro": true,
   "markerStat": true,
-  "isOldIDCheck": true
+  "isOldIDCheck": false
 }
