@@ -32,11 +32,11 @@
 
     .card {
       background: white;
-      padding: 1.5rem;
-      border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
       text-align: center;
-      max-width: 400px;
+      max-width: 420px;
       width: 100%;
       position: relative;
       overflow: hidden;
@@ -48,14 +48,26 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 6px;
+      height: 4px;
       background: linear-gradient(90deg, var(--primary), var(--accent));
+    }
+
+    .version-badge {
+      background: linear-gradient(135deg, var(--success) 0%, #45a049 100%);
+      color: white;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 1rem;
+      letter-spacing: 0.5px;
     }
 
     .card h2 {
       color: var(--primary);
       margin-bottom: 1.2rem;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 700;
       display: flex;
       align-items: center;
@@ -68,50 +80,58 @@
       font-size: 1rem;
       line-height: 1.5;
       text-align: center;
+      color: #444;
+      font-weight: 500;
     }
 
-    .features {
-      text-align: left;
+    .main-features {
+      background: linear-gradient(135deg, rgba(67, 97, 238, 0.08) 0%, rgba(76, 201, 240, 0.08) 100%);
+      border-radius: 12px;
+      padding: 1.2rem;
       margin: 1.5rem 0;
+      border: 1px solid rgba(67, 97, 238, 0.15);
     }
 
-    .feature {
+    .feature-item {
       display: flex;
-      align-items: flex-start;
-      margin-bottom: 15px;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .feature-item:last-child {
+      margin-bottom: 0;
     }
 
     .feature-icon {
-      color: var(--primary);
+      color: var(--success);
       font-size: 1.2rem;
       min-width: 30px;
       text-align: center;
-      margin-top: 3px;
-    }
-
-    .feature-text {
-      flex: 1;
+      margin-right: 12px;
     }
 
     .telegram-offer {
-      background: rgba(0, 136, 204, 0.05);
-      border-radius: 12px;
-      padding: 15px;
+      background: rgba(0, 136, 204, 0.06);
+      border-radius: 10px;
+      padding: 12px;
       margin: 1.5rem 0;
-      font-size: 0.95rem;
-      border-left: 4px solid var(--telegram);
+      font-size: 0.9rem;
+      border-left: 3px solid var(--telegram);
     }
 
     .button {
       display: block;
-      padding: 0.9rem;
+      padding: 1rem;
       background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
       color: white;
       text-decoration: none;
       font-weight: 600;
       border-radius: 12px;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 12px rgba(67, 97, 238, 0.25);
+      box-shadow: 0 4px 16px rgba(67, 97, 238, 0.25);
       border: none;
       cursor: pointer;
       font-size: 1rem;
@@ -122,46 +142,52 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
+      letter-spacing: 0.3px;
     }
 
     .button:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(67, 97, 238, 0.35);
+      box-shadow: 0 6px 20px rgba(67, 97, 238, 0.35);
     }
 
     .button-telegram {
       background: linear-gradient(135deg, var(--telegram) 0%, #0077b5 100%);
-      box-shadow: 0 4px 12px rgba(0, 136, 204, 0.25);
+      box-shadow: 0 4px 16px rgba(0, 136, 204, 0.25);
     }
 
     .button-telegram:hover {
-      box-shadow: 0 6px 15px rgba(0, 136, 204, 0.35);
+      box-shadow: 0 6px 20px rgba(0, 136, 204, 0.35);
     }
 
     .footer-note {
       margin-top: 1rem;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: #666;
       line-height: 1.4;
+      font-weight: 400;
     }
   </style>
 </head>
 <body>
   <div class="card">
+    <div class="version-badge">
+      <i class="fas fa-star"></i> ВЕРСИЯ 1.25.0
+    </div>
+
     <h2>
-      <i class="fas fa-sync-alt"></i> Требуется обновление!
+      <i class="fas fa-sync-alt"></i> Требуется обновление
     </h2>
 
     <div class="update-message">
-      Увеличена скорость работы. Авторизация больше не нужна.
+      Выпущена новая версия приложения с улучшениями производительности и стабильности
     </div>
 
     <div class="telegram-offer">
-      <div style="font-weight: 600; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-        <i class="fab fa-telegram" style="color: var(--telegram); font-size: 1.2rem;"></i> 
-        Будьте в курсе обновлений!
+      <div style="font-weight: 600; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
+        <i class="fab fa-telegram" style="color: var(--telegram); font-size: 1.1rem;"></i> 
+        Будьте в курсе обновлений
       </div>
-      <div>Подпишитесь на наш Telegram-канал, чтобы первыми узнавать о новых функциях и изменениях</div>
+      <div>Подпишитесь на наш Telegram-канал для получения новостей</div>
     </div>
 
     <a href="https://rustore.ru/catalog/app/com.taxihelper.coef" class="button">
@@ -173,8 +199,8 @@
     </a>
 
     <div class="footer-note">
-      После обновления приложение продолжит работать в обычном режиме.<br>
-      Спасибо за вашу поддержку!
+      После обновления приложение продолжит работу в обычном режиме.<br>
+      Благодарим за использование нашего приложения.
     </div>
   </div>
 </body>
