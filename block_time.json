@@ -12,5 +12,5 @@
   "isOldPro": true,
   "markerStat": true,
   "isOldIDCheck": true,
-  "delayAlg": 5000
+  "delayAlg": 10000
 }
