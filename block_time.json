@@ -13,5 +13,5 @@
   "markerStat": true,
   "isOldIDCheck": true,
   "delayAlg": 10000,
-  "isAutoAuth": true
+  "isAutoAuth": false
 }
