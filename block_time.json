@@ -1,9 +1,9 @@
 {
   "blockTime": 9999999,
   "blockTime2": 1440,
-  "maxAuthErrorCount": 1,
+  "maxAuthErrorCount": 2,
   "accounts": 2,
-  "accountsPro": 12,
+  "accountsPro": 10,
   "hourFreePodpiska": 24,
   "allFree": false,
   "newFree": false,
@@ -12,6 +12,6 @@
   "isOldPro": true,
   "markerStat": true,
   "isOldIDCheck": true,
-  "delayAlg": 10000,
+  "delayAlg": 8000,
   "isAutoAuth": false
 }
