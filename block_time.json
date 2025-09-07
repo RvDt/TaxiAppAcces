@@ -2,7 +2,7 @@
   "blockTime": 9999999,
   "blockTime2": 1440,
   "maxAuthErrorCount": 2,
-  "accounts": 2,
+  "accounts": 1,
   "accountsPro": 10,
   "hourFreePodpiska": 24,
   "allFree": false,
