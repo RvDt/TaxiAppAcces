@@ -6,12 +6,12 @@
   "accountsPro": 10,
   "hourFreePodpiska": 24,
   "allFree": false,
-  "newFree": false,
+  "newFree": true,
   "accountsProTrial": 6,
-  "warnPro": true,
-  "isOldPro": true,
+  "warnPro": false,
+  "isOldPro": false,
   "markerStat": true,
-  "isOldIDCheck": true,
+  "isOldIDCheck": false,
   "delayAlg": 8000,
   "isAutoAuth": false
 }
