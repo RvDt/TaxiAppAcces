@@ -3,15 +3,15 @@
   "blockTime2": 1440,
   "maxAuthErrorCount": 3,
   "accounts": 1,
-  "accountsPro": 10,
+  "accountsPro": 9,
   "hourFreePodpiska": 24,
   "allFree": false,
   "newFree": true,
-  "accountsProTrial": 6,
+  "accountsProTrial": 5,
   "warnPro": false,
   "isOldPro": false,
   "markerStat": true,
   "isOldIDCheck": false,
-  "delayAlg": 8000,
+  "delayAlg": 7500,
   "isAutoAuth": false
 }
