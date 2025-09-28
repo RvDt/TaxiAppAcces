@@ -13,5 +13,6 @@
   "markerStat": true,
   "isOldIDCheck": false,
   "delayAlg": 7500,
-  "isAutoAuth": false
+  "isAutoAuth": false,
+  "mongoIp": "91.200.150.222"
 }
