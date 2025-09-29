@@ -14,5 +14,5 @@
   "isOldIDCheck": false,
   "delayAlg": 7500,
   "isAutoAuth": false,
-  "mongoIp": "taxi-map.ru"
+  "mongoIp": "91.200.150.222"
 }
