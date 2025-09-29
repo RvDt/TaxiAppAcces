@@ -14,5 +14,5 @@
   "isOldIDCheck": false,
   "delayAlg": 7500,
   "isAutoAuth": false,
-  "mongoIp": "5.129.240.148"
+  "mongoIp": "5.129.240.61"
 }
