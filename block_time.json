@@ -12,7 +12,7 @@
   "isOldPro": false,
   "markerStat": true,
   "isOldIDCheck": false,
-  "delayAlg": 6000,
+  "delayAlg": 8000,
   "isAutoAuth": true,
   "mongoIp": "185.207.65.17",
   "mongoIpNew": "45.10.243.95",
